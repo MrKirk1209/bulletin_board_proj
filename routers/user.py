@@ -120,7 +120,7 @@ def update_user(
 
 
 @router.delete("/{user_id}")
-def delete_advertisement(
+def delete_user(
     user_id: int,
     current_user: pyd.UserBase = Depends(security.get_current_user),
     admin: m.User = Depends(security.require_admin),
